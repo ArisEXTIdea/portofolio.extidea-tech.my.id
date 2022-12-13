@@ -1,0 +1,61 @@
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.man-profile {
+  width: 420px;
+  height: auto;
+}
+
+.purple-box-1 {
+  top: 20%;
+  border-radius: 100px 0 0 10px;
+}
+
+.purple-box-2 {
+  bottom: 20%;
+  border-radius: 10px 0 0 10px;
+}
+
+.border-white {
+  border: 4px solid #fff;
+  box-sizing: border-box;
+}
+
+.border-purple {
+  border: 3px solid #ddd3ef;
+  box-sizing: border-box;
+}
+
+.border-purple2 {
+  border: 3px solid #a57cf5;
+  box-sizing: border-box;
+}
+
+.segitiga1 {
+  height: 0px;
+  width: 0px;
+  border-bottom: solid 60px #d6c0ff;
+  border-left: solid 40px transparent;
+  border-right: solid 40px transparent;
+  margin-bottom: 20px;
+}
+
+.segitiga2 {
+  height: 0px;
+  width: 0px;
+  border-bottom: solid 60px #fff;
+  border-left: solid 40px transparent;
+  border-right: solid 40px transparent;
+  margin-bottom: 20px;
+}
+
+.segitiga3 {
+  height: 0px;
+  width: 0px;
+  border-bottom: solid 30px #fff;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+  margin-bottom: 20px;
+}
