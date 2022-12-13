@@ -1,0 +1,50 @@
+CRITICAL - 2022-12-13 06:43:38 --> Class "Modules\Landing\BaseController" not found
+in APPPATH\Modules\Landing\Controllers\Landing.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Modules\\Landing\\Controllers\\Landing.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Modules\\Landing\\Controllers\\Landing')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Modules\\Landing\\Controllers\\Landing')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Modules\\Landing\\Controllers\\Landing', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-13 06:44:06 --> Class "Modules\Landing\Controllers\BaseController" not found
+in APPPATH\Modules\Landing\Controllers\Landing.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Modules\\Landing\\Controllers\\Landing.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Modules\\Landing\\Controllers\\Landing')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Modules\\Landing\\Controllers\\Landing')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Modules\\Landing\\Controllers\\Landing', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-13 06:50:12 --> Undefined property: Modules\Landing\Controllers\Landing::$viewPath
+in APPPATH\Modules\Landing\Controllers\Landing.php on line 80.
+ 1 APPPATH\Modules\Landing\Controllers\Landing.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Modules\\Landing\\Controllers\\Landing::$viewPath', 'APPPATH\\Modules\\Landing\\Controllers\\Landing.php', 80)
+ 2 SYSTEMPATH\CodeIgniter.php(927): Modules\Landing\Controllers\Landing->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(Modules\Landing\Controllers\Landing))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-13 06:50:27 --> Invalid file: Modules\Landing\landing.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules\\Landing\\landing.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Modules\\Landing\\landing', [], true)
+ 3 APPPATH\Modules\Landing\Controllers\Landing.php(80): view('Modules\\Landing\\landing', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): Modules\Landing\Controllers\Landing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(Modules\Landing\Controllers\Landing))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-13 06:50:31 --> Invalid file: Modules\Landing\landing.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules\\Landing\\landing.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Modules\\Landing\\landing', [], true)
+ 3 APPPATH\Modules\Landing\Controllers\Landing.php(80): view('Modules\\Landing\\landing', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): Modules\Landing\Controllers\Landing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(Modules\Landing\Controllers\Landing))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

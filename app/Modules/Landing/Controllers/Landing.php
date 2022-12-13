@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Landing\Controllers;
+namespace Modules\Landing\Controllers;
 
 use App\Controllers\BaseController;
 
@@ -8,7 +8,7 @@ class Landing extends BaseController
 {
     public function __construct()
     {
-        $this->viewPath = 'App\Modules\Landing\Views';
+        $this->viewPath = 'Modules\Landing\Views';
     }
     public function index()
     {
