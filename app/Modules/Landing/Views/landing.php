@@ -62,26 +62,26 @@
                     <p class="text-md md:text-lg font-semibold">programming and design</p>
                 </div>
                 <div class="mt-10 flex flex-row justify-center md:justify-start">
-                    <a class="bg-purple-500 px-5 mx-2 md:ml-0 mr-2 py-3 text-white border-purple2 rounded text-center" href="">App Project</a>
-                    <a class="bg-white-500 px-5 mx-2 md:ml-0 mr-2  py-3 box-border border-purple2 rounded text-center" href="">Design Project</a>
+                    <a class="bg-purple-500 px-5 mx-2 md:ml-0 mr-2 py-3 text-white border-purple2 rounded text-center" href="#portofolio">App Project</a>
+                    <a class="bg-white-500 px-5 mx-2 md:ml-0 mr-2  py-3 box-border border-purple2 rounded text-center" href="#design">Design Project</a>
                 </div>
-            </div>
-            <div class="w-full px-10 flex flex-row justify-center md:justify-start z-40">
-                <a href="https://www.linkedin.com/in/muhammad-aris-widaryani-464145200/" target="_blank">
-                    <div class="w-12 h-12 bg-gray-400 hover:bg-sky-600 mr-3 mb-8 flex justify-center rounded items-center hover:duration-500">
-                        <i class="fab fa-linkedin-in text-lg text-white"></i>
-                    </div>
-                </a>
-                <a href="https://github.com/ArisEXTIdea" target="_blank">
-                    <div class="w-12 h-12 bg-gray-400 hover:bg-stone-800 mr-3 mb-8 flex justify-center rounded items-center hover:duration-500">
-                        <i class="fab fa-github text-lg text-white"></i>
-                    </div>
-                </a>
-                <a href="https://www.upwork.com/freelancers/~0158421d7ba8ae0c4a" target="_blank">
-                    <div class="w-12 h-12 bg-gray-400 hover:bg-lime-400 mr-3 mb-8 flex justify-center rounded items-center hover:duration-500">
-                        <img class="w-5" src="/assets/storage/images/upwork.png" alt="Logo">
-                    </div>
-                </a>
+                <div class="mt-20 flex flex-row justify-center md:justify-start">
+                    <a href="https://www.linkedin.com/in/muhammad-aris-widaryani-464145200/" target="_blank">
+                        <div class="w-12 h-12 bg-gray-400 hover:bg-sky-600 mr-3 mb-8 flex justify-center rounded items-center hover:duration-500">
+                            <i class="fab fa-linkedin-in text-lg text-white"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/ArisEXTIdea" target="_blank">
+                        <div class="w-12 h-12 bg-gray-400 hover:bg-stone-800 mr-3 mb-8 flex justify-center rounded items-center hover:duration-500">
+                            <i class="fab fa-github text-lg text-white"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~0158421d7ba8ae0c4a" target="_blank">
+                        <div class="w-12 h-12 bg-gray-400 hover:bg-lime-400 mr-3 mb-8 flex justify-center rounded items-center hover:duration-500">
+                            <img class="w-5" src="/assets/storage/images/upwork.png" alt="Logo">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -114,7 +114,7 @@
                             </div>
                         </a>
                         <?php if($d['github_access'] == 1):?>
-                        <a href="https://github.com/ArisEXTIdea" target="_blank">
+                        <a href="<?= $d['github_url']?>" target="_blank">
                             <div class="w-10 h-10 bg-gray-400 hover:bg-stone-800 mr-3 mb-8 flex justify-center rounded items-center hover:duration-500">
                                 <i class="fab fa-github text-lg text-white"></i>
                             </div>
@@ -133,7 +133,7 @@
             </div>
             <?php endforeach;?>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center" id="design">
             <div class="mt-10 w-96 border-b-4 border-purple-500">
                 <h1 class="text-2xl font-bold text-center">DESIGN PROJECT</h1>
                 <p class="text-lg text-center">"Design creates culture. Culture shapes values. Values determine the future." -- Robert L. Peters, designer and author</p>
@@ -454,10 +454,11 @@
             });
         }
         const navHeight = $("#navbar").height()
-        $("#intro").attr("style", `padding-top: ${navHeight * 3}px`);
-        $("#portofolio").attr("style", `padding-top: ${navHeight * 3}px`);
-        $("#skills").attr("style", `padding-top: ${navHeight * 3}px`);
-        $("#contacts").attr("style", `padding-top: ${navHeight * 3}px`);
+        $("#intro").attr("style", `padding-top: ${navHeight}px`);
+        $("#portofolio").attr("style", `padding-top: ${navHeight}px`);
+        $("#skills").attr("style", `padding-top: ${navHeight}px`);
+        $("#contacts").attr("style", `padding-top: ${navHeight}px`);
+        $("#design").attr("style", `padding-top: ${navHeight}px`);
     }
 
     const onWindowResize = () => {

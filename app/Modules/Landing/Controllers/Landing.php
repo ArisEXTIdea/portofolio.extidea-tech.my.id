@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Landing\Controllers;
+namespace App\Modules\Landing\Controllers;
 
 use App\Controllers\BaseController;
 
@@ -8,7 +8,7 @@ class Landing extends BaseController
 {
     public function __construct()
     {
-        $this->viewPath = 'Modules\Landing\Views';
+        $this->viewPath = 'App\Modules\Landing\Views';
     }
     public function index()
     {
@@ -54,7 +54,7 @@ class Landing extends BaseController
                 'desc' => 'Website technofest 2021  adalah sebuah website yang dikembangkan sebagai media pengenalan dan media pendaftaran peserta Technofest 2021.',
                 'stack' => 'mernstack.png',
                 'github_access' => 1,
-                'github_url' => '',
+                'github_url' => 'https://github.com/ArisEXTIdea/technofest2021fin',
                 'address' => 'https://technofest2021.netlify.app/',
                 'documentation' => '',
                 'img' => 'technofest.png'
@@ -64,7 +64,7 @@ class Landing extends BaseController
                 'desc' => 'Website untuk menampilkan seluruh portofolio yang telah dibuat baik portofolio berupa aplikasi maupun berupa desain',
                 'stack' => 'cilogo.png',
                 'github_access' => 1,
-                'github_url' => '',
+                'github_url' => 'https://github.com/ArisEXTIdea/portofolio.extidea-tech.my.id',
                 'address' => 'https://portofolio.extidea-tech.my.id',
                 'documentation' => '',
                 'img' => 'portofolioweb.png'
